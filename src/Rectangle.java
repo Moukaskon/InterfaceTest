@@ -1,4 +1,4 @@
-public class Rectangle {
+public class Rectangle implements Drawable {
     private double width;
     private double height;
 
@@ -7,6 +7,7 @@ public class Rectangle {
         this.height = height;
     }
 
+    @Override
     public void draw() {
         System.out.println("Drawing a rectangle of size " + width + "x" + height);
     }
